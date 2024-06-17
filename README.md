@@ -1,2 +1,2 @@
 # web-dev
-Small projects to learn HTML, CSS and JavaScript. These are projects that I have completed on Udemy, NCCE CPD, and other sites.
+This repo has small projects that I did to learn HTML, CSS and JavaScript. These projects were part of courses that I have attend on Udemy, etc.
