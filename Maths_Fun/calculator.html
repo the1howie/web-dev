@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  
+  <body>
+    
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a class="active" href="calculator.html">Calculator</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="about.html">About</a>
+    </div>
+    
+    <h1>Simple Calculator</h1> <hr>
+    
+    <h2>Instructions</h2>
+    
+    <ul>
+      <li>Input numbers <font style="color:red">a</font> and <font style="color:red">b</font>.</li>
+      <li>Click on the operation button below.</li>
+    </ul>
+
+    <table id="io">
+      <tr>
+        <th style="min-width:40px">a</th>
+        <th style="min-width:40px">b</th>
+        <th style="min-width:120px"><div id="opAB">?</div></th>
+      </tr>
+      <tr>
+        <td style="min-width:40px"><input type="number" id="numA"  placeholder="0" onChange="updateResult('numA','numB')"></td>
+        <td style="min-width:40px"><input type="number" id="numB"  placeholder="0" onChange="updateResult('numA','numB')"></td>
+        <td style="min-width:120px"><div id="result">result</div></td>
+      </tr>
+    </table>
+    
+    
+    <table id="ops" class="numPad">
+      <tr>
+        <td><button type="button" class="block" onClick="calcOperation('numA','numB','add')"><b> + </b></button></td>
+        <td><button type="button" class="block" onClick="calcOperation('numA','numB','sub')"><b> - </b></button></td>
+        <td><button type="button" class="block" onClick="calcOperation('numA','numB','mlt')"><b> × </b></button></td>
+        <td><button type="button" class="block" onClick="calcOperation('numA','numB','div')"><b> ÷ </b></button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="block" onClick="calcOperation('numA','numB','pow')"><b>a<sup>b</sup></b></button></td>
+        <td><button type="button" class="block" onClick="calcOperation('numA','numB','log')"><b>log<sub>a</sub></b></button></td>
+        <td><button type="button" class="block" onClick="calcOperation('numA','numB','mod')"><b>mod<sub></sub></b></button></td>
+        <td><button type="button" class="block" onClick="calcOperation('numA','numB','idv')"><b>//<sub></sub></b></button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="block" onClick="calcOperation('numA','numB','nrt')"><b><sup>a</sup>√b</b></button></td>
+        <td><button type="button" class="block" onClick="calcOperation('numA','numB','lcm')"><b>LCM<sub></sub></b></button></td>
+        <td><button type="button" class="block" onClick="calcOperation('numA','numB','gcd')"><b>GCD<sub></sub></b></button></td>
+        <td><button type="button" class="block" onClick="switchAB('numA','numB')"><b>a↔b<sub></sub></b></button></td>
+      </tr>
+      <tr>
+        <td colspan="4"><button type="button" class="block" style="background-color:grey" onClick="resetInputs('numA','numB')"><b>Clear<sub></sub></b></button></td>
+      </tr>
+    </table>
+    
+    
+    <!-- footer -->
+    
+    <br>
+    
+    <br> <img src="hip2bSq.jpg" width="300">
+    
+    <br>
+
+    <br> <p>To learn more cool math, go to the <a href="https://www.khanacademy.org/" alt="Khan Academy" target="_blank">Khan Academy</a>.</p>
+    
+    <br><a href="index.html" id="links">Home</a>
+    
+  </body>
+  
+</html>

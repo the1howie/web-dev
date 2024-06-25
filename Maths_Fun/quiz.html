@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maths Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  
+  <body onload="setQuizData()">
+    
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="calculator.html">Calculator</a>
+      <a class="active" href="quiz.html">Quiz</a>
+      <a href="about.html">About</a>
+    </div>
+    
+    <h1 id="quizTop">Maths Quiz</h1> <hr>
+    
+    <h2>Instructions</h2>
+    
+    <ul>
+      <li>Type in your answers in the input boxes provided.</li>
+      <li>You can check your answers anytime by pressing the "Submit Answers" button.</li>
+      <li>Note that submitting answers locks them down. You cannot change them after.</li>
+      <li>Most importantly, have fun!</li>
+    </ul>
+    
+    <h3 id="qzTotal">Total points: 0</h3>
+    
+    <table id="qz">
+      <tr>
+        <td style="min-width:40px"><div id="A1">1</div></td>
+        <td><div id="B1">+</div></td>
+        <td style="min-width:40px"><div id="C1">1</div></td>
+        <td>=</td>
+        <td style="min-width:120px"><input type="number" id="E1" placeholder="0" onChange="validInput('E1')"></td>
+        <td><div id="F1">?</div></td>
+      </tr>
+      
+      <tr>
+        <td style="min-width:40px"><div id="A2">5</div></td>
+        <td><div id="B2">-</div></td>
+        <td style="min-width:40px"><div id="C2">2</div></td>
+        <td>=</td>
+        <td style="min-width:120px"><input type="number" id="E2" placeholder="0" onChange="validInput('E2')"></td>
+        <td><div id="F2">?</div></td>
+      </tr>
+      
+      <tr>
+        <td style="min-width:40px"><div id="A3">3</div></td>
+        <td><div id="B3">×</div></td>
+        <td style="min-width:40px"><div id="C3">2</div></td>
+        <td>=</td>
+        <td style="min-width:120px"><input type="number" id="E3" placeholder="0"  onChange="validInput('E3')"></td>
+        <td><div id="F3">?</div></td>
+      </tr>
+      
+      <tr>
+        <td style="min-width:40px"><div id="A4">3</div></td>
+        <td><div id="B4">÷</div></td>
+        <td style="min-width:40px"><div id="C4">2</div></td>
+        <td>=</td>
+        <td style="min-width:120px"><input type="number" id="E4" placeholder="0" onChange="validInput('E4')"></td>
+        <td><div id="F4">?</div></td>
+      </tr>
+      
+      <tr>
+        <td style="min-width:40px"><div id="A5">3</div></td>
+        <td><div id="B5">÷</div></td>
+        <td style="min-width:40px"><div id="C5">2</div></td>
+        <td>=</td>
+        <td style="min-width:120px"><input type="number" id="E5" placeholder="0" onChange="validInput('E5')"></td>
+        <td><div id="F5">?</div></td>
+      </tr>
+      
+      <tr>
+        <td style="min-width:40px"><div id="A6">3</div></td>
+        <td><div id="B6">÷</div></td>
+        <td style="min-width:40px"><div id="C6">2</div></td>
+        <td>=</td>
+        <td style="min-width:120px"><input type="number" id="E6" placeholder="0" onChange="validInput('E6')"></td>
+        <td><div id="F6">?</div></td>
+      </tr>
+      
+    </table>
+    
+    <table class="numPad">
+      <tr>
+        <td>
+          <button type="button" class="block" onClick="validateQuiz()"><b>Submit Answers</b></button>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <button type="button" class="block" style="background-color:grey" onClick="setQuizData()"><b>Reset Quiz</b></button>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- footer -->
+    
+    <br>
+    
+    <br> <div id="qzImg"><img  src="mathsIsFun.jpg" width="320"></div>
+    
+    <br>
+
+    <br> <p>To learn more cool math, go to the <a href="https://www.khanacademy.org/" alt="Khan Academy" target="_blank">Khan Academy</a>.</p>
+    
+    <br><a href="index.html" id="links">Home</a>
+    
+  </body>
+  
+</html>
